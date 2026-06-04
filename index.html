@@ -61,9 +61,22 @@ th{background:#fbf3e4;color:var(--gold);font-size:19px}
   .quick{grid-template-columns:1fr 1fr}
   .hero{min-height:auto}
 }
+
+.social-area{max-width:1180px;margin:auto;padding:58px 18px;text-align:center}
+.social-box{background:white;border:1px solid var(--line);border-radius:24px;padding:28px;box-shadow:0 10px 26px #0000000d}
+.social-buttons{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:18px}
+.btn.whatsapp{background:linear-gradient(135deg,#128c4a,#25d366)}
+.float-whatsapp{position:fixed;right:16px;bottom:16px;z-index:99;background:#25d366;color:white!important;text-decoration:none;border-radius:999px;padding:14px 18px;font-weight:bold;box-shadow:0 10px 25px #0004}
+.qr-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:18px;margin-top:25px}
+.qr-card{background:#fffaf2;border:1px solid var(--line);border-radius:20px;padding:16px}
+.qr-card img{width:100%;max-width:180px;background:white;border:8px solid white;border-radius:12px}
+.qr-card h3{color:var(--gold);margin:8px 0 4px;font-size:20px}
+@media(max-width:820px){.float-whatsapp{left:16px;right:16px;text-align:center}}
+
 </style>
 </head>
 <body>
+<a class="float-whatsapp" href="https://wa.me/4917661072119?text=Hallo%20Mirela%2C%20ich%20m%C3%B6chte%20einen%20Termin%20buchen." target="_blank">📱 Termin über WhatsApp buchen</a>
 
 <div class="topbar">
   <div class="nav">
@@ -74,9 +87,10 @@ th{background:#fbf3e4;color:var(--gold);font-size:19px}
       <a href="#cocktailshot">Cocktailshot</a>
       <a href="#extensions">Extensions</a>
       <a href="#galerie">Galerie</a>
+      <a href="#qrcodes">QR-Codes</a>
       <a href="#kontakt">Kontakt</a>
     </div>
-    <a class="btn" href="tel:+4917661072119">Termin buchen</a>
+    <a class="btn" href="https://wa.me/4917661072119?text=Hallo%20Mirela%2C%20ich%20m%C3%B6chte%20einen%20Termin%20buchen." target="_blank">Termin buchen</a>
   </div>
 </div>
 
@@ -88,7 +102,7 @@ th{background:#fbf3e4;color:var(--gold);font-size:19px}
       <h2>Ihr Friseur für Schönheit mit Leidenschaft</h2>
       <p>Damenhaarschnitt, Styling, Farbe, Balayage, Haarverlängerung, Cocktailshot und Brautstyling – mit persönlicher Beratung und Liebe zum Detail.</p>
       <p>
-        <a class="btn" href="tel:+4917661072119">01766 1072119 anrufen</a>
+        <a class="btn" href="https://wa.me/4917661072119?text=Hallo%20Mirela%2C%20ich%20m%C3%B6chte%20einen%20Termin%20buchen." target="_blank">📱 Termin über WhatsApp buchen</a>
         <a class="btn light" href="#preise">Preise ansehen</a>
       </p>
     </div>
@@ -96,7 +110,7 @@ th{background:#fbf3e4;color:var(--gold);font-size:19px}
       <h3>Schönheit ist unsere Leidenschaft</h3>
       <p><strong>Adresse:</strong><br>Marlenstraße 7, 77656 Offenburg</p>
       <p><strong>Öffnungszeiten:</strong><br>Di – Fr: 09:00 – 18:00 Uhr<br>Sa: 08:00 – 14:00 Uhr</p>
-      <p><strong>Termine nach Vereinbarung</strong></p>
+      <p><strong>Termine am besten per WhatsApp</strong></p>
     </div>
   </div>
 </header>
@@ -148,7 +162,7 @@ th{background:#fbf3e4;color:var(--gold);font-size:19px}
         <li>Intensive Repairing Ritual – ab 80 €</li>
         <li>Luxury Repairing Ritual – ab 120 €</li>
       </ul>
-      <a class="btn" href="tel:+4917661072119">Termin vereinbaren</a>
+      <a class="btn" href="https://wa.me/4917661072119?text=Hallo%20Mirela%2C%20ich%20m%C3%B6chte%20einen%20Termin%20buchen." target="_blank">📱 Termin über WhatsApp buchen</a>
     </div>
     <img src="cocktailshot.jpeg" style="width:100%;border-radius:24px;border:1px solid #6d4b16">
   </div>
@@ -174,16 +188,36 @@ th{background:#fbf3e4;color:var(--gold);font-size:19px}
   </div>
 </section>
 
+
+<section id="qrcodes" class="social-area">
+  <div class="social-box">
+    <h2 style="color:var(--gold);font-weight:normal;margin-top:0">Termin buchen & Social Media</h2>
+    <p>Scanne den passenden QR-Code oder klicke direkt auf den Button.</p>
+    <div class="social-buttons">
+      <a class="btn whatsapp" href="https://wa.me/4917661072119?text=Hallo%20Mirela%2C%20ich%20m%C3%B6chte%20einen%20Termin%20buchen." target="_blank">📱 WhatsApp Termin buchen</a>
+      <a class="btn" href="https://www.instagram.com/mirelas_hairstyle_extensions?igsh=MTBxZW4xejltY3htYw==" target="_blank">📸 Instagram ansehen</a>
+      <a class="btn" href="https://www.tiktok.com/@mirelas_hairstyle?_r=1&_t=ZG-96vmKpXunpI" target="_blank">🎵 TikTok ansehen</a>
+      <a class="btn light" href="https://g.page/r/CRZuAwG1biszEAE/review" target="_blank">⭐ Google Bewertung</a>
+    </div>
+    <div class="qr-grid">
+      <div class="qr-card"><img src="qr-whatsapp.png" alt="WhatsApp QR Code"><h3>WhatsApp</h3><p>Termin buchen</p></div>
+      <div class="qr-card"><img src="qr-instagram.png" alt="Instagram QR Code"><h3>Instagram</h3><p>Meine Arbeiten ansehen</p></div>
+      <div class="qr-card"><img src="qr-tiktok.png" alt="TikTok QR Code"><h3>TikTok</h3><p>Videos ansehen</p></div>
+      <div class="qr-card"><img src="qr-google-bewertung.png" alt="Google Bewertung QR Code"><h3>Google</h3><p>Bewertung schreiben</p></div>
+    </div>
+  </div>
+</section>
+
 <section id="kontakt" class="contact">
   <div class="wrap">
     <div>
       <h3>Mirela's Hairstyle</h3>
       <p>Schönheit ist unsere Leidenschaft.</p>
-      <p><a class="btn" href="tel:+4917661072119">Jetzt anrufen</a></p>
+      <p><a class="btn" href="https://wa.me/4917661072119?text=Hallo%20Mirela%2C%20ich%20m%C3%B6chte%20einen%20Termin%20buchen." target="_blank">📱 Termin über WhatsApp buchen</a></p>
     </div>
     <div>
       <h3>Kontakt</h3>
-      <p>Telefon: 01766 1072119<br>Marlenstraße 7<br>77656 Offenburg</p>
+      <p>Telefon: 01766 1072119<br>Marlenstraße 7<br>77656 Offenburg<br><br><a href="https://www.instagram.com/mirelas_hairstyle_extensions?igsh=MTBxZW4xejltY3htYw==" target="_blank">Instagram</a> · <a href="https://www.tiktok.com/@mirelas_hairstyle?_r=1&_t=ZG-96vmKpXunpI" target="_blank">TikTok</a> · <a href="https://g.page/r/CRZuAwG1biszEAE/review" target="_blank">Google Bewertung</a></p>
     </div>
     <div>
       <h3>Öffnungszeiten</h3>
